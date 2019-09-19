@@ -6,7 +6,7 @@ public protocol PileAnimationMetric {
   var delay: CFTimeInterval { get }
   var damping: CGFloat { get }
   var initialVelocity: CGFloat { get }
-  var options: UIViewAnimationOptions { get }
+  var options: UIView.AnimationOptions { get }
 }
 
 public struct DefaultAnimationMetric: PileAnimationMetric {
@@ -14,7 +14,7 @@ public struct DefaultAnimationMetric: PileAnimationMetric {
   public let delay: CFTimeInterval
   public let damping: CGFloat
   public let initialVelocity: CGFloat
-  public let options: UIViewAnimationOptions
+  public let options: UIView.AnimationOptions
   
   public init() {
     self.duration = 0.6
